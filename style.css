@@ -229,3 +229,35 @@ button.Rock{
 .suggestions p{
   font-size: 12px;
 }
+
+@media screen and (max-width: 767px){
+  .container{
+    grid-template: 400px 1fr/ 1fr;
+    grid-template-areas:
+        "video"
+        "content";
+  }
+  .left{
+    display: none;
+  }
+  .section-button {
+    grid-template-columns: 1fr;
+    grid-template-areas:"comments" 
+                        "suggestions";
+}
+.suggestions{
+  margin: 0 10% 0 10%;
+}
+.image1 figure, .image2 figure {
+  margin: 0;
+}
+.suggestions a{
+  display: inline;
+}
+.sug-tog{
+  display: flex;
+}
+.img-size{
+  width: 100%;
+}
+}
