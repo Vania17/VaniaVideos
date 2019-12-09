@@ -6,6 +6,9 @@ body{
 a {
   cursor: pointer;
 }
+a:hover{
+  color: #E4313E;
+}
 .container{
   height: 100%;
   display: grid;
@@ -109,6 +112,7 @@ a {
 }
 .space-share{
   display: flex;
+  align-items: center;
 }
 
 .space-share button{
@@ -116,6 +120,9 @@ a {
   background: linear-gradient(90deg, rgb(252, 16, 10), rgba(252, 98, 150,1));
   padding: 0 7px 0 7px;
   margin-right: 20px;
+}
+.space-share button:hover, .button-music button:hover{
+  background: rgb(21, 27, 49);
 }
 .space-share a{
   color: rgba(62, 72, 98, 1);
@@ -135,8 +142,12 @@ a.share, a.save{
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 50px;
+  justify-content: center;
 }
-
+a.share:hover, a.save:hover{
+  background-color: rgb(224, 220, 220);
+}
 .button-music button{
   height: 25px;
   width: 80px;
