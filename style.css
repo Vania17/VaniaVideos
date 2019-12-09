@@ -1,0 +1,220 @@
+body{
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+a {
+  cursor: pointer;
+}
+.container{
+  height: 100%;
+  display: grid;
+  grid-template: 400px 1fr/minmax(50px, 300px) 1fr;
+  grid-template-areas: "left video"
+                       "left content";
+}
+
+/*left*/
+.left{
+  grid-area: left;
+  background-color: rgba(21, 27, 49, 1);
+  color: white;
+  padding: 10px;
+}
+.left .logo h1{
+  font-size:30px;
+}
+.left .logo span{
+  color: rgb(241, 75, 89); 
+}
+.description-left{
+  text-align: start;
+}
+.description-left h4, .friends-left h4{
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.description-left ol{
+  padding-left: 20px;
+}
+.description-left li{
+  padding:0 20px 0 20px;
+  line-height: 20px;
+  padding-bottom: 10px;
+}
+.name{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+ .name img, .comment-name img{
+   width: 40px;
+   height: 40px;
+   border-radius: 100%;
+   margin-right: 10px;
+ }
+
+/*video*/
+.video{
+  grid-area: video;
+}
+.youtube-video{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.flexible-video{
+  width: 100%;
+  height: 100%;;
+  position: relative;
+}
+
+/*content*/
+.content{
+  grid-area: content;
+}
+
+.section-top{
+  border-bottom: 1px solid rgba(194, 194, 194, 1);
+  padding: 0 20px 10px 20px;
+  margin: 0;
+}
+
+.title-content h4, .title-content p{
+  margin: 0;
+}
+.title-content h4{
+  font-size: 20px;
+  font-weight: 200;
+  margin: 20px 0 5px 0;
+  color: rgb(34, 35, 36);
+}
+.title-content p{
+  color: rgb(128, 126, 126);
+}
+.buttom-top{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.buttom-top button{
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  background: green;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+.space-share{
+  display: flex;
+}
+
+.space-share button{
+  height: 30px;
+  background: linear-gradient(90deg, rgb(252, 16, 10), rgba(252, 98, 150,1));
+  padding: 0 7px 0 7px;
+  margin-right: 20px;
+}
+.space-share a{
+  color: rgba(62, 72, 98, 1);
+  text-decoration: none;
+  margin-right: 20px;
+}
+.space-share p{
+  margin: 5px 0 0 0;
+  font-size: 12px;
+}
+a .fas{
+  color: rgba(62, 72, 98, 1);
+  font-size: 14px;
+}
+
+a.share, a.save{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-music button{
+  height: 25px;
+  width: 80px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+button.electronic{
+  background: rgba(155, 87, 252, 1);
+}
+
+button.Rap{
+  background: rgba(23, 233, 196, 1);
+}
+button.eighty{
+  background: rgba(224, 23, 33, 1);
+}
+button.Rock{
+  background: rgba(237, 48, 132, 1);
+}
+
+.section-button{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "comments suggestions";
+}
+.comments{
+  grid-area: comments;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+.text-comment{
+  background-color: rgb(247, 244, 244);
+  border: 1px solid #E6E6E6;
+  height: 30px;
+  border-radius: 5px;
+  width: 80%;
+  font-size: 16px;
+  color: rgb(148, 148, 148);
+  padding-left: 10px; 
+  font-family: 'Lato', sans-serif; 
+  margin-bottom: 20px;
+}
+.text-comment::placeholder{
+  color: #B5B5B5;
+}
+
+.comment-name{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.name-com p{
+  margin: 0;
+}
+
+.name-com p:first-child{
+  margin-bottom: 3px;
+}
+
+.suggestions{
+  grid-area: suggestions;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgb(70, 85, 97);
+  padding: 0 20px 0 20px;
+}
+
+.image1 figure, .image2 figure{
+  margin: 0;
+  width: 100%;
+}
+.suggestions img{
+  width: 80%;
+}
+
+.suggestions p{
+  font-size: 12px;
+}
