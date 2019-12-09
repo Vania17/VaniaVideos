@@ -117,6 +117,7 @@ a:hover{
 
 .space-share button{
   height: 30px;
+  width: max-content;
   background: linear-gradient(90deg, rgb(252, 16, 10), rgba(252, 98, 150,1));
   padding: 0 7px 0 7px;
   margin-right: 20px;
