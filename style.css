@@ -153,7 +153,7 @@ a.share:hover, a.save:hover{
   height: 25px;
   width: 80px;
   font-size: 14px;
-  margin-right: 10px;
+  margin: 5px 10px 0 0;
 }
 
 button.electronic{
@@ -230,7 +230,15 @@ button.Rock{
 .suggestions p{
   font-size: 12px;
 }
-
+@media screen and (max-width: 985px){
+  .buttom-top{
+    display: block;
+  }
+  .button-music button{
+    height: 20px;
+    font-size: 12px;
+  }
+}
 @media screen and (max-width: 767px){
   .container{
     grid-template: 400px 1fr/ 1fr;
@@ -261,9 +269,7 @@ button.Rock{
 .img-size{
   width: 100%;
 }
-.buttom-top{
-  display: block;
-}
 .button-music button{
 margin-top: 3px;
+}
 }
