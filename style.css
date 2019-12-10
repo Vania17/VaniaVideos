@@ -230,7 +230,7 @@ button.Rock{
 .suggestions p{
   font-size: 12px;
 }
-@media screen and (max-width: 985px){
+@media screen and (max-width: 986px){
   .buttom-top{
     display: block;
   }
